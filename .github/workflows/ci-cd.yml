@@ -42,7 +42,7 @@ jobs:
         aws-region: us-west-2
 
     - name: Set up kubectl
-      uses: aws-actions/eksctl@v1
+      uses: aws-actions/eks-setup@v1
       with:
         cluster-name: your-cluster-name
         region: us-west-2
