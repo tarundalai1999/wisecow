@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y fortune-mod cowsay
 # Copy the application script into the container
 COPY wisecow.sh .
 
+# Grant execute permissions to the script
+RUN chmod +x wisecow.sh
+
 # Expose the application port
 EXPOSE 4499
 
