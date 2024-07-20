@@ -21,7 +21,7 @@ jobs:
       with:
         context: .
         push: true
-        tags: username/wisecow:latest
+        tags: tarundalai1999/wisecow:latest
 
   deploy:
     needs: build
